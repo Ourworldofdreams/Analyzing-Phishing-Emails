@@ -48,6 +48,89 @@ Based on the analysis, this email exhibits multiple characteristics typical of p
 - **Technical Controls**: Implement email filtering and URL reputation checks to detect and block similar phishing emails in the future.
 - **Threat Sharing**: Share the details of this phishing attempt, including the IOCs, with your organization's security team and relevant threat intelligence sharing platforms to help protect against similar attacks.
 
+
+
+
+---
+
+
+---
+
+
+---
+
+
+
+# Phishing-pot Phishing Email Analysis Report
+![Screenshot 2024-12-12 at 4 02 00 PM](https://github.com/user-attachments/assets/18a84093-727d-486b-a0ae-2581085fc3ed)
+
+## Metadata
+- **Source**: `GitHub Phishing Sample Repository`
+- **Threat Classification**: `Phishing Attempt`
+
+## Objective:
+
+## 1. Header Analysis
+### Email Metadata
+- **Date Received**: `7/29/23, 13:16`
+- **From**: `hello<otto-newsletter@newsletter.otto.de>`
+- **Reply-To**: `reply_to@winner-win.art`
+- **Sender IP**: `80.96.157.91`
+### Authentication Verification
+- **SPF Check**: `Softfail`
+- **DKIM Verification**: `None`
+- **DMARC Policy**: `Fail`
+
+   ![Screenshot 2024-12-12 at 4 15 33 PM](https://github.com/user-attachments/assets/a8646d83-df39-483b-843b-efad224fc212)
+
+## 2. Content Analysis
+### Email Body Characteristics
+- The email appears to be impersonating an Apple iCloud Drive notification, with several hyperlinks included, most likely used as credential harvesting mechanisms.     
+
+## 3. URL Analysis
+### Link Examination
+- **Displayed URL**: The displayed Hypertext links are no longer active, suggesting the phishing site has been taken down. 
+![Screenshot 2024-12-12 at 4 58 49 PM](https://github.com/user-attachments/assets/0a44b1a3-9298-4e76-9f10-794bf0ced4b3)
+
+### URL Reputation Checks
+- **VirusTotal Status**: `Malicious`
+![Screenshot 2024-12-12 at 4 56 46 PM](https://github.com/user-attachments/assets/3a446850-41c1-4d03-b45b-775d5adc2e7a)
+
+  ![Screenshot 2024-12-12 at 5 00 22 PM](https://github.com/user-attachments/assets/8bcba9e2-465c-493b-b4c9-018c00b2ab6d)
+
+- **Phishtank Verification**: `Confirmed Phishing`
+- **IP Geolocation**:
+  - latest serving IP for the hypertextlink: `72.52.178.23` 
+  - Country: `US`
+  - Hosting Provider: `Liquidweb`
+
+## 5. Indicators of Compromise (IOCs)
+### Network Indicators
+- **Malicious URLs**: 
+  -`http://bsq2.firiri.shop/V0RPUjMzbjdPeHRLVlo2RFZ4WXBqZklYbTBnY1Btc1R5aUp4cWNUMzNOUjJnNDNjUUg5NUt2U1hYQkFpYlIyVi82NHBrdDVpRnhPdG1tQWlZbWVWMUE9PQ__`
+  - `https://t.co/gDHura2rGc`
+  - **IP Addresses**:
+  - `72.52.178.23`
+  - `104.244.42.197`
+**Email Addresses**:
+  - `Dringend->Icloud <otto-newsletter@newsletter.otto.de`
+- **Reply-To Address**:
+  - `reply_to@winner-win.art`
+- **Sender IP Address**:
+  - `80.96.157.91`
+
+## 8. Mitigation Recommendations
+### Immediate Actions
+- Block the identified malicious URLs and IP addresses at the email gateway and network firewall.
+- Investigate any devices that may have interacted with the phishing content.
+- Reset passwords for any potentially compromised user accounts.
+
+### Long-term Strategies
+- Implement advanced email filtering and URL reputation checks to detect and block similar phishing attempts in the future.
+- Conduct regular security awareness training for employees to help them identify and report suspicious emails.
+- Share the details of this phishing attack, including the IOCs, with your organization's security team and relevant threat intelligence sharing platforms.
+
+---
 ## Tools Used
 - Thunderbird 
 - VirusTotal
