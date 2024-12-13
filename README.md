@@ -1,10 +1,33 @@
 # Phishing-Pot: A Series of Phishing Email Analyses
 
+---
 
+# **The Phishing Analysis Labs**  
+*A showcase of phishing email investigations demonstrating analytical and technical expertise.*
+
+## **Overview**  
+This repository is a collection of phishing email analyses I’ve conducted to demonstrate my experience in identifying and dissecting email-based threats. Each case study reflects my ability to investigate phishing campaigns, uncover Indicators of Compromise (IOCs), and recommend actionable defenses.  
+
+The work highlights my skills in email header analysis, content forensics, and understanding phishing techniques, making it a portfolio I can speak to during interviews or discussions about my experience.
 
 ---
 
-# **Phishing-Pot Phishing Email Analysis Report**
+## **What’s Included?**  
+Each analysis includes:  
+1. **Email Header Analysis:** Details about sender information, email authentication, and signs of spoofing.  
+2. **Content Analysis:** Examination of phishing tactics, social engineering methods, and intended outcomes.  
+3. **Link/URL Investigation:** A dive into malicious links and their behaviors.  
+4. **Indicators of Compromise (IOCs):** A summary of malicious email addresses, IPs, and URLs.  
+5. **Mitigation Recommendations:** Steps to prevent and respond to similar attacks.
+
+---
+
+## **Why This Matters**  
+Phishing remains one of the most common and effective attack methods. This repository reflects my ability to analyze these threats in-depth, demonstrate a proactive approach to identifying risks, and recommend mitigations. It showcases my ability to think critically, apply technical skills, and communicate findings effectively.
+
+---
+
+# **`1 Sweepstakes-Cookware`**
 
 ![Screenshot](https://github.com/user-attachments/assets/006d15ca-ec0c-4eda-b5ac-2dc87d6b1cf3)
 
@@ -116,7 +139,6 @@ This email demonstrates multiple characteristics typical of phishing attempts:
 This phishing email leveraged social engineering and spoofed email addresses to trick recipients into engaging with a malicious link. While the phishing infrastructure has been taken down, the IOCs should be disseminated to prevent similar attacks.
 
 
-
 ---
 
 
@@ -125,11 +147,7 @@ This phishing email leveraged social engineering and spoofed email addresses to 
 
 ---
 
-
-
----
-
-# **Phishing-pot Phishing Email Analysis Report**
+# **`2. Apple-iCloud-Spoof`**
 
 ![Screenshot](https://github.com/user-attachments/assets/18a84093-727d-486b-a0ae-2581085fc3ed)
 
@@ -272,12 +290,7 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 ---
 
 
-
----
-
-
-
-# Phishing Email Analysis Report
+# **`3. Microsoft-SignIn-Spoof`**
 
 ![Screenshot 2024-12-13 at 1 03 19 PM](https://github.com/user-attachments/assets/dd1b4f0c-63ca-4706-9358-3adcc640166a)
 
