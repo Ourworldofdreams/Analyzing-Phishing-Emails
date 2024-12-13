@@ -19,7 +19,7 @@
 ![Screenshot 2024-12-02 at 12 11 35 AM](https://github.com/user-attachments/assets/e81c4407-3f8d-4d16-9501-1b29b2bca8e9)
 
 ## 2. Content Analysis
-
+- **Subject** `Re: Shipment Pending - Ultimate Nonstick Cookware`
 - **Greeting Style**: The greeting was generic and impersonal, lacking any personalization.
 - **Urgency Indicators**: The email conveyed a strong sense of urgency, suggesting immediate action was required to avoid some consequence.
 - **Legitimacy of Offer**: The claim of winning a "Sweepstakes Ultimate Nonstick Cookware entry" seemed highly dubious and out of context for a typical email.
@@ -73,9 +73,12 @@ Based on the analysis, this email exhibits multiple characteristics typical of p
 ## 1. Header Analysis
 ### Email Metadata
 - **Date Received**: `7/29/23, 13:16`
+- **To** `phishing@pot`
 - **From**: `hello<otto-newsletter@newsletter.otto.de>`
 - **Reply-To**: `reply_to@winner-win.art`
 - **Sender IP**: `80.96.157.91`
+- **DNS Lookup**:
+  
 ### Authentication Verification
 - **SPF Check**: `Softfail`
 - **DKIM Verification**: `None`
@@ -84,7 +87,9 @@ Based on the analysis, this email exhibits multiple characteristics typical of p
    ![Screenshot 2024-12-12 at 4 15 33 PM](https://github.com/user-attachments/assets/a8646d83-df39-483b-843b-efad224fc212)
 
 ## 2. Content Analysis
-### Email Body Characteristics
+- **Content-Transfer-Encoding**: `7bit`
+- **Subject**:phishing@pot, 𝕀𝕙𝕣 𝕚ℂ𝕝𝕠𝕦𝕕-𝕊𝕡𝕖𝕚𝕔𝕙𝕖𝕣 𝕚𝕤𝕥 𝕧𝕠𝕝𝕝
+- ### Email Body Characteristics
 - The email appears to be impersonating an Apple iCloud Drive notification, with several hyperlinks included, most likely used as credential harvesting mechanisms.     
 
 ## 3. URL Analysis
@@ -106,7 +111,7 @@ Based on the analysis, this email exhibits multiple characteristics typical of p
 
 ## 5. Indicators of Compromise (IOCs)
 ### Network Indicators
-- **Malicious URLs**: 
+- **Malicious URLs of the main call-to-action buttons**: 
   -`http://bsq2.firiri.shop/V0RPUjMzbjdPeHRLVlo2RFZ4WXBqZklYbTBnY1Btc1R5aUp4cWNUMzNOUjJnNDNjUUg5NUt2U1hYQkFpYlIyVi82NHBrdDVpRnhPdG1tQWlZbWVWMUE9PQ__`
   - `https://t.co/gDHura2rGc`
   - **IP Addresses**:
@@ -132,8 +137,10 @@ Based on the analysis, this email exhibits multiple characteristics typical of p
 
 ---
 ## Tools Used
-- Thunderbird 
-- VirusTotal
-- Symantec SiteReview
-- URLScan.io
-- AbuseIPDB
+- `Thunderbird` 
+- `VirusTotal`
+- `Symantec SiteReview`
+- `URLScan.io`
+- `AbuseIPDB`
+- `URL2PNG`
+- `Whois.domaintools`
