@@ -438,3 +438,4 @@ Conduct a comprehensive forensic analysis of a phishing email to identify potent
 - `URL2PNG`
 - `Whois.domaintools`
 - `mha.azurewebsites.net`
+- `ipinfo.io`
