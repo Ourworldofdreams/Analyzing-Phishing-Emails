@@ -43,9 +43,9 @@ This report provides a detailed analysis of a phishing email that claimed the re
 
 ### **Email Metadata**
 - **Date Received:** November 3, 2022  
-- **From:** lfzdd@electroplan.com  
-- **Reply-To:** newsletter@electroplan.com  
-- **Sender IP:** 89.144.11.72  
+- **From:** `lfzdd@electroplan.com` 
+- **Reply-To:** `newsletter@electroplan.com`  
+- **Sender IP:** `89.144.11.72`  
 
 ### **Authentication Verification**
 - **SPF/DKIM:** Failed  
@@ -75,7 +75,7 @@ This report provides a detailed analysis of a phishing email that claimed the re
 
 ### **Displayed vs. Actual URL**
 - **Displayed URL:** The URL presented in the email was invalid, likely to obscure the malicious intent.  
-- **Actual URL:** Redirected to `https://t.co/xY6w4URIzV`, which is now inaccessible.  
+- **Actual URL:** Redirected to `hxxps://t[.]co/xY6w4URIzV`, which is now inaccessible.  
   - The URL likely led to a phishing site that has since been taken down.  
 
 ![URL Analysis Screenshot](https://github.com/user-attachments/assets/54b56ff5-7960-49c4-ae47-50b9b192de74)
@@ -85,10 +85,10 @@ This report provides a detailed analysis of a phishing email that claimed the re
 ## **4. Indicators of Compromise (IOCs)**
 
 ### **Key Indicators**
-- **Email Address:** lfzdd@electroplan.com  
-- **Reply-To Address:** newsletter@electroplan.com  
-- **Sender IP Address:** 89.144.11.72  
-- **Malicious URL:** https://t.co/xY6w4URIzV  
+- **Email Address:** `lfzdd@electroplan.com`  
+- **Reply-To Address:** `newsletter@electroplan.com` 
+- **Sender IP Address:** `89.144.11.72`  
+- **Malicious URL:** `hxxps://t[.]co/xY6w4URIzV`  
 
 ---
 
@@ -108,8 +108,8 @@ This email demonstrates multiple characteristics typical of phishing attempts:
 
 ### **Immediate Actions**
 1. **Block Malicious Entities:**  
-   - Add `lfzdd@electroplan.com` and `newsletter@electroplan.com` to your blocklist.  
-   - Block the sender IP (`89.144.11.72`) and the URL (`https://t.co/xY6w4URIzV`) at the email gateway and firewall.  
+   - Add `lfzdd@electroplan[.]com` and `newsletter@electroplan[.]com` to your blocklist.  
+   - Block the sender IP (`89[.]144[.]11[.]72`) and the URL (`hxxps://t[.]co/xY6w4URIzV`) at the email gateway and firewall.  
 
 2. **Investigate Potential Exposure:**  
    - Review logs for user interactions with this email, especially clicks on the URL.  
@@ -168,8 +168,8 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 - **Date Received:** 7/29/2023, 13:16  
 - **Recipient:** phishing@pot  
 - **From:** hello `<otto-newsletter@newsletter.otto.de>`  
-- **Reply-To:** reply_to@winner-win.art  
-- **Sender IP:** 80.96.157.91  
+- **Reply-To:** `reply_to@winner-win.art` 
+- **Sender IP:** `80.96.157.91`  
 
 ### **DNS Lookup Results**
 - DNS records for `newsletter.otto.de` and `winner-win.art` do not correlate with legitimate email servers.  
@@ -188,7 +188,7 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 ## **2. Content Analysis**
 
 ### **Email Body Characteristics**
-- **Content-Transfer-Encoding:** 7-bit  
+- **Content-Transfer-Encoding:** `7-bit`  
 - **Subject:** phishing@pot, 𝕀𝕙𝕣 𝕚ℂ𝕝𝕠𝕦𝕕-𝕊𝕡𝕖𝕚𝕔𝕙𝕖𝕣 𝕚𝕤𝕥 𝕧𝕠𝕝𝕝 (Translation: *Your iCloud storage is full*)  
 - **Tactics Observed:**  
   - **Impersonation:** Mimics an Apple iCloud notification.  
@@ -205,15 +205,15 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 ![URL Screenshot](https://github.com/user-attachments/assets/0a44b1a3-9298-4e76-9f10-794bf0ced4b3)
 
 ### **URL Reputation Checks**
-- **VirusTotal Status:** Malicious.  
+- **VirusTotal Status:** `Malicious.`  
 
 ![VirusTotal Screenshot 1](https://github.com/user-attachments/assets/3a446850-41c1-4d03-b45b-775d5adc2e7a)  
 ![VirusTotal Screenshot 2](https://github.com/user-attachments/assets/8bcba9e2-465c-493b-b4c9-018c00b2ab6d)
 
 ### **IP Geolocation**
-- **Active IP Address:** 72.52.178.23  
+- **Active IP Address:** `72[.]52[.]178[.]23`  
   - **Country:** US  
-  - **Hosting Provider:** lb01.parklogic.com  
+  - **Hosting Provider:** `lb01.parklogic.com`  
 
 ![Geolocation Screenshot](https://github.com/user-attachments/assets/0e0d6f80-770d-454f-aa45-bccd64283aa1)
 
@@ -223,19 +223,19 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 
 ### **Network Indicators**
 - **Malicious URLs:**  
-  - `http://bsq2.firiri.shop/V0RPUjMzbjdPeHRLVlo2RFZ4WXBqZklYbTBnY1Btc1R5aUp4cWNUMzNOUjJnNDNjUUg5NUt2U1hYQkFpYlIyVi82NHBrdDVpRnhPdG1tQWlZbWVWMUE9PQ__`  
-  - `https://t.co/gDHura2rGc`  
+  - `hxxp://bsq2[.]firiri.shop/V0RPUjMzbjdPeHRLVlo2RFZ4WXBqZklYbTBnY1Btc1R5aUp4cWNUMzNOUjJnNDNjUUg5NUt2U1hYQkFpYlIyVi82NHBrdDVpRnhPdG1tQWlZbWVWMUE9PQ__`  
+  - `hxxps://t[.]co/gDHura2rGc`  
 
 - **IP Addresses:**  
-  - 72.52.178.23  
-  - 104.244.42.197  
+  - `72[.]52[.]178[.]23`  
+  - `104[.]244[.]42[.]197`  
 
 ### **Email Addresses**
-- **Sender Email:** otto-newsletter@newsletter.otto.de  
-- **Reply-To Address:** reply_to@winner-win.art  
+- **Sender Email:** `otto-newsletter@newsletter.otto.de`  
+- **Reply-To Address:** `reply_to@winner-win.art`  
 
 ### **Sender IP Address**
-- 80.96.157.91  
+- `80.96.157.91`  
 
 ---
 
@@ -248,7 +248,7 @@ Analyze a suspected phishing email to uncover security risks, indicators of comp
 
 2. **Analyze Logs:**  
    - Identify if any users interacted with the email.  
-   - Investigate activities involving the IPs `72.52.178.23` and `80.96.157.91`.  
+   - Investigate activities involving the IPs `72[.]52[.]178[.]23` and `80[.]96[.]157[.]91`.  
 
 3. **Secure Potentially Affected Accounts:**  
    - Reset credentials for users who engaged with the email.  
@@ -316,8 +316,8 @@ Conduct a comprehensive forensic analysis of a phishing email to identify potent
 - **Date Received:** 8/4/2023, 19:09  
 - **From:** Microsoft account team `<no-reply@access-accsecurity.com>`  
 - **Reply-To:** solutionteamrecognizd03@gmail.com  
-- **Sender IP:** 89.144.44.4  
-- **Return Path:** bounce@providentusezn.co.uk
+- **Sender IP:** `89.144.44.4`  
+- **Return Path:** `bounce@providentusezn.co.uk`
   
 ![Screenshot 2024-12-13 at 1 36 39 PM](https://github.com/user-attachments/assets/ca3f9189-f031-4772-8bd3-5876d25f4428)
 
@@ -338,7 +338,7 @@ Conduct a comprehensive forensic analysis of a phishing email to identify potent
 ## **2. Content Analysis**
 
 ### **Email Body Characteristics**
-- **Content-Transfer-Encoding:** 8-bit  
+- **Content-Transfer-Encoding:** `8-bit`  
 - **Subject:** Microsoft account unusual sign-in activity  
 - **Observed Social Engineering Tactics:**  
   - **Brand Spoofing:** Pretends to be an official Microsoft alert.  
@@ -371,11 +371,11 @@ Conduct a comprehensive forensic analysis of a phishing email to identify potent
 
 ### **Network Indicators**
 - **Malicious Domains:**  
-  - access-accsecurity.com  
-  - providentusezn.co.uk  
+  - `access-accsecurity[.]com` 
+  - `providentusezn[.]co[.]uk`  
 
 - **IP Addresses:**  
-  - 89.144.44.4  
+  - `89[.]144[.]44[.]4`  
 
 ---
 
@@ -383,9 +383,9 @@ Conduct a comprehensive forensic analysis of a phishing email to identify potent
 
 ### **Immediate Actions**
 1. **Blocklist Malicious Domains and IPs:**  
-   - access-accsecurity.com  
-   - providentusezn.co.uk  
-   - 89.144.44.4  
+   - `access-accsecurity[.]com` 
+   - `providentusezn[.]co[.]uk`  
+   - `89[.]144[.]44[.]4`  
 
 2. **Notify End Users:** Alert recipients to identify and delete this phishing email without interacting with it.
 
